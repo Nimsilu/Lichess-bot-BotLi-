@@ -43,13 +43,13 @@ engine:                                   # Engine settings.
     Move Overhead: 200                    # Increase if your bot flags games too often.
     Threads: 3                            # Max CPU threads the engine can use.
     Hash: 134                             # Max memory (in megabytes) the engine can allocate.
-    MultiPV: 2
+    MultiPV: 1
     Skill Level: 20
     UCI_Elo : 2850
-    Slow Mover: 40
+    Slow Mover: 100
     
     
-move_overhead_multiplier: 5.3             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 7.6             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
 
 challenge:                                # Incoming challenges. (Commenting allowed)
@@ -57,7 +57,7 @@ challenge:                                # Incoming challenges. (Commenting all
   min_increment: 0                        # Minimum amount of increment to accept a challenge.
   max_increment: 0                       # Maximum amount of increment to accept a challenge.
   min_initial: 0                          # Minimum amount of initial time to accept a challenge.
-  max_initial: 30                        # Maximum amount of initial time to accept a challenge.
+  max_initial: 1000                        # Maximum amount of initial time to accept a challenge.
   variants:                               # Chess variants to accept (https://lichess.org/variant).
     - standard
 #   - chess960
@@ -70,10 +70,10 @@ challenge:                                # Incoming challenges. (Commenting all
 #   - racingKings
 #   - threeCheck
   time_controls:                          # Time controls to accept.
-    - bullet
-    - blitz
-    - rapid
-    - classical
+     - bullet
+     - blitz
+#    - rapid
+#    - classical
   bot_modes:                              # Game modes to accept against BOTs.
     - casual                              # Unrated games.
     - rated                               # Rated games
