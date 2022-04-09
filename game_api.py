@@ -26,8 +26,8 @@ class Game_api:
         game_queue_thread = Thread(target=self._watch_game_stream, daemon=True)
         game_queue_thread.start()
        
-        self.api.send_chat_message(self.game_id, "player", "Hello! You playing with MarcoEngine, chess neural network.")
-        self.api.send_chat_message(self.game_id, "player", "I wish you good luck!")
+        self.api.send_chat_message(self.game_id, "player", "Hello! You playing with {me} .")
+        self.api.send_chat_message(self.game_id, "player", "I wish you good luck {oppenent}!")
 
         self.api.send_chat_message(self.game_id, "spectator", "Welcome friends!")
         self.api.send_chat_message(self.game_id, "spectator", "Thanks for watching my games!")
@@ -79,7 +79,7 @@ class Game_api:
                 print(event)
         
         self.api.send_chat_message(self.game_id, "spectator", "Bye!")
-        self.api.send_chat_message(self.game_id, "player", "Hey, GG! Thanks for game!")
+        self.api.send_chat_message(self.game_id, "player", "Good Game!")
         
         print(f'Game {self.game_id} over')
 
