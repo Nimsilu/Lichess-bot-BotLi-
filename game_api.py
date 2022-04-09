@@ -27,7 +27,7 @@ class Game_api:
         game_queue_thread.start()
        
         self.api.send_chat_message(self.game_id, "player", "Hello! You playing with BOT Dr-RespectBot.")
-        self.api.send_chat_message(self.game_id, "player", 'Good Luck {opponent}')
+        self.api.send_chat_message(self.game_id, "player", 'I wish you, All the best!')
 
         self.api.send_chat_message(self.game_id, "spectator", "Welcome friends!")
         self.api.send_chat_message(self.game_id, "spectator", "Thanks for watching my games!")
