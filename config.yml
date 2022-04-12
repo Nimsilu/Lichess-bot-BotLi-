@@ -46,7 +46,7 @@ engine:                                   # Engine settings.
     MultiPV: 11
     Skill Level: 20
     UCI_Elo : 2850
-    Slow Mover: 40
+    Slow Mover: 20
 
     
 move_overhead_multiplier: 1.4            # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
