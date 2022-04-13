@@ -1,7 +1,7 @@
 #!/bin/bash
 chmod +x engines/stockfish
 chmod +x engines/multivariant_stockfish
-chmod +x engines/fairy-sf
+chmod +x engines/stockfish_14.1_linux_x64_popcnt
 
 ### ONLY UNCOMMENT ONE START POINT ###
 
